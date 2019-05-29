@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>Browser-Modifiable Adaptable Window</title>
+	<style>
+		
+	</style>
+
+	<script>
+		function page_displayer(){
+			var site = document.getElementById('website').value;
+			document.getElementById('s').src = site;
+		}
+	</script>
+</head>
+
+<body>
+	<center>Enter URL below</center>
+	<center>
+	<input type="text" name="website" id = 'website'>
+	<input type="button" name="Go" onclick = "page_displayer()" value = "Go">
+	</center>
+
+	<center>
+		<iframe id = "s" src="https://www.wikipedia.org"  width = 100% height = 75%></iframe>
+	</center>
+
+</body>
+</html> 
